@@ -1,0 +1,112 @@
+#body {
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: flex-start;
+  padding: 4px;
+  gap: 24px;
+}
+
+#body > button.icon, .window-body > div.textinput > button.icon {
+  background-color: transparent;
+  box-shadow: none;
+  color: white;
+  outline-color: white !important;
+  font-family: "Pixelated MS Sans Serif";
+  display: inline-grid;
+  text-align: center;
+  grid-template-rows: 32px max-content;
+  gap: 4px;
+  width: 72px;
+  height: max-content;
+  overflow: visible;
+  text-decoration: none;
+  position: relative;
+  padding: 4px 6px;
+}
+
+.window-body > div.textinput > button.icon {
+  color: black;
+  outline-color: black !important;
+}
+
+#body > button.icon:active, .window-body > div.textinput > button.icon:active {
+  padding: 4px 6px;
+}
+
+#body > button.icon > img, .window-body > div.textinput > button.icon > img {
+  width: 32px;
+  height: 32px;
+  object-fit: none;
+  object-position: center;
+  margin: auto;
+}
+
+#body > button.icon > span, .window-body > div.textinput > button.icon > span {
+  width: 100%;
+  overflow: hidden;
+  white-space: wrap;
+  word-wrap: break-word;
+}
+
+#body > button.icon > shortcut, .window-body > div.textinput > button.icon > shortcut {
+  height: 32px;
+  width: 72px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(imgs/overlay_shortcut-1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#screen > .floating {
+  position: absolute;
+  z-index: 9;
+}
+
+#screen > .floating textarea {
+  width: 100%;
+  height: 100%;
+  resize: none;
+  padding: 8px;
+}
+
+.title-bar-text * {
+  vertical-align: text-bottom;
+}
+
+.title-bar-text img {
+  height: 16px;
+  width: 16px;
+  margin: -2px;
+  padding: 0;
+  margin-right: 4px;
+}
+
+.window.close {
+  display: none;
+}
+
+.aot {
+  z-index: 10;
+}
+
+/* */
+
+#np {
+  left: 200px;
+  top: 78px;
+}
+
+#femc {
+  left: 150px;
+  top: 100px;
+}
+
+#femd {
+  left: 100px;
+  top: 120px;
+}

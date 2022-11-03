@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Windows 98</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/98.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="body.css">
+</head>
+
+<body>
+  <div id="screen">
+    <div class="window floating close" id="np" style="width: 350px;height: 200px" onclick="openWindow('#np', '');">
+      <div class="title-bar">
+        <div class="title-bar-text"><img src="imgs/notepad-0.png" />Number 7.txt - Notepad for Suckers</div>
+        <div class="title-bar-controls">
+          <button aria-label="Minimize"></button>
+          <button aria-label="Maximize"></button>
+          <button aria-label="Close" onclick="window.event.stopPropagation();closeWindow('#np');"></button>
+        </div>
+      </div>
+      <div class="window-body" style="padding: 0; margin: 0; height: calc(100% - 22px);">
+        <textarea
+          readonly>Number 7: Student watches porn and gets naked. A Bangladeshi 20 year old student was arrested after watching porn, stripping naked, and attacking an attendant during a flight. In March 2018, shortly after the Malindo Air flight departed from Kuala Lumpur, the 20 year old started watching pornography on his laptop. As nobody seemed to notice or call him out for it, the man began taking his clothes off. At the request of the cabin crew, the student put his clothes back on, but soon he tried to hug female flight attendants. When the crew members rejected him, he reportedly became aggressive and groped a flight attendant. With the help of some of the passengers, the cabin crew managed to subdue the man, and tie his hands with a piece of cloth for the rest of the flight. One of the passengers captured the moment with his phone. Although airline officials refuse to confirm details of the incident, the photo of a man with his bottom sticking out of his pants and hands tied up emerged online. The disruptive passenger was arrested on arrival.</textarea>
+      </div>
+    </div>
+    <div class="window floating file-ex close" id="femc" style="width: 400px;height: 300px" onclick="openWindow('#femc', '');">
+      <div class="title-bar">
+        <div class="title-bar-text"><img src="imgs/mct.png" />My Computer</div>
+        <div class="title-bar-controls">
+          <button aria-label="Minimize"></button>
+          <button aria-label="Maximize"></button>
+          <button aria-label="Close" onclick="window.event.stopPropagation();closeWindow('#femc');"></button>
+        </div>
+      </div>
+      <div class="window-body" style="padding: 0; margin: 0; height: calc(100% - 22px);">
+        <div class="window tinyWin">
+          <div class="spacer"></div>
+          <button>File</button>
+          <button>Edit</button>
+          <button>View</button>
+          <button>Go</button>
+          <button>Favorites</button>
+          <button>Help</button>
+        </div>
+        <div class="window tinyWin">
+          <div class="spacer"></div>
+          <span style="margin-right: 2px;">Address</span>
+          <div class="textinput">
+            <img src="imgs/mct.png" />&nbsp;&nbsp;&nbsp;My Computer
+          </div>
+        </div>
+        <div class="textinput">
+          <button class="icon">
+            <img src="imgs/msg.png" />
+            <span>There Would Usually Be Something Here But I'm Too Lazy To Get All Of The Icons.txt</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="window floating file-ex close" id="femd" style="width: 400px;height: 300px" onclick="openWindow('#femd', '');">
+      <div class="title-bar">
+        <div class="title-bar-text"><img src="imgs/dcst.png" />My Documents</div>
+        <div class="title-bar-controls">
+          <button aria-label="Minimize"></button>
+          <button aria-label="Maximize"></button>
+          <button aria-label="Close" onclick="window.event.stopPropagation();closeWindow('#femd');"></button>
+        </div>
+      </div>
+      <div class="window-body" style="padding: 0; margin: 0; height: calc(100% - 22px);">
+        <div class="window tinyWin">
+          <div class="spacer"></div>
+          <button>File</button>
+          <button>Edit</button>
+          <button>View</button>
+          <button>Go</button>
+          <button>Favorites</button>
+          <button>Help</button>
+        </div>
+        <div class="window tinyWin">
+          <div class="spacer"></div>
+          <span style="margin-right: 2px;">Address</span>
+          <div class="textinput">
+            <img src="imgs/dcst.png" />&nbsp;&nbsp;&nbsp;My Documents
+          </div>
+        </div>
+        <div class="textinput">
+          <button class="icon" ondblclick="openExecutable('broSurePopup')">
+            <img src="imgs/exe.png" />
+            <span>broSurePopup.exe</span>
+          </button>
+          <button class="icon" ondblclick="openExecutable('helloWorld')">
+            <img src="imgs/exe_abc.png" />
+            <span>helloWorld.exe</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="body">
+      <button class="icon" ondblclick="openWindow('#femc', 'My Computer');">
+        <img src="imgs/mc.png" />
+        <span>My Computer</span>
+      </button>
+      <button class="icon" ondblclick="openWindow('#femd', 'My Documents');">
+        <img src="imgs/dcs.png" />
+        <span>My Documents</span>
+      </button>
+      <button class="icon">
+        <img src="imgs/trsh.png" />
+        <span>'Social Media'</span>
+      </button>
+      <button class="icon" ondblclick="window.open('https://twitch.tv/mtheorange', '_blank');">
+        <shortcut></shortcut>
+        <img src="imgs/ttv.png" />
+        <span>Twitch</span>
+      </button>
+      <button class="icon" ondblclick="openWindow('#np', 'Number 7.txt - Notepad for Suckers');">
+        <img src="imgs/msg.png" />
+        <span>Number 7.txt</span>
+      </button>
+    </div>
+    <div class="window" id="taskbar">
+      <div class="window-body">
+        <button><img src="imgs/windows.png" />Start</button>
+        <div class="section">
+          <div class="spacer"></div>
+          <a>
+            <img src="imgs/windows.png" />
+          </a>
+        </div>
+        <div class="section" id="taskbarButtons">
+          <div class="spacer"></div>
+        </div>
+        <div class="window" id="wdtb">
+          <div class="window-body">
+            <span>Time refuses to exist here.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+  <script src="executables.js"></script>
+</body>
+
+</html>
